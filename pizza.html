@@ -1,0 +1,586 @@
+
+<!doctype html>
+<html>
+<head>
+
+
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+	<meta name="title" content="
+Pizza Pontoise, Pizza Luigi Pontoise livre des pizzas   &agrave; domicile et au bureau &agrave; Pontoise.
+ ">
+	<meta name="description" content="
+Pizza Luigi Pontoise,T&eacute;l.: 01.30.75.20.20..Livraison de pizzas  &agrave; Pontoise. Site web r&eacute;alis&eacute; par Des-click.
+">
+
+	<meta name="keywords" content="
+Pontoise, Pizza Luigi Pontoise, livraison pizza, livraison pizzas, commander une pizza, commander pizza, pizza livr&eacute;e, pizza &agrave; domicile, pizza a domicile, pizza Pontoise, livraison &agrave; domicile, livraison a domicile,Pontoise, livraison de pizza &agrave; Pontoise, pizza, pizzeria, livraison, domicile, rapide, vente, emporter, pizzas,
+">
+
+	<title>Pizza Pontoise, Pizza Luigi Pontoise livre des pizzas   &agrave; domicile et au bureau &agrave; Pontoise.
+	</title>
+	<!doctype html>
+
+	<html>
+
+	<head>
+
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+
+
+		<!-- Bootstrap CSS -->
+
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+
+
+		<!-- AwesomeFonts -->
+
+		<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+
+		<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+
+		<!-- Scroll to Top Arrow -->
+
+		<link rel="stylesheet" href="topArrow/style.css">
+
+
+
+		<!-- 3D Flip Effect -->
+
+		<link rel="stylesheet" href="css/3DFlip-Effect.css">
+
+		<script src="js/3DFlip-jquery-1.js"></script>
+
+		<script src="js/3DFlip-comman.js"></script>
+
+
+
+		<script src="01_includes/01_files/functions.js"></script>
+
+		<!-- ImgHover Effect -->
+
+		<link rel="stylesheet" href="css/imgHoverEffect.css" type="text/css" media="screen"/>
+
+		<link rel="stylesheet" type="text/css" href="image-picker/image-picker.css">
+
+
+
+		<!-- PageAnimation -->
+
+		<link href="style-animation/animate.min.css" rel="stylesheet"/>
+
+		<link href="style-animation/style.css" rel="stylesheet"/>
+
+
+
+		<!-- mainSlider -->
+
+		<link rel="stylesheet" type="text/css" href="slider-css/demo.css" />
+
+		<link rel="stylesheet" type="text/css" href="slider-css/style.css" />
+
+		<link rel="stylesheet" type="text/css" href="slider-css/custom.css" />
+
+		<script type="text/javascript" src="slider-js/modernizr.custom.79639.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="linpage-FlipHover/style_common.css" />
+
+		<link rel="stylesheet" type="text/css" href="linpage-FlipHover/style1.css" />
+
+
+		<script type="text/javascript">
+
+            function PopupDetailsMenus(url,id_produit){
+
+                if(id_produit!="") url+="&id_produit="+id_produit;
+
+                var customModal = $('<div id="ModalPizzaMenus" class="modal fade">\
+ <div class="modal-dialog"  style="width:740px">\
+ <div class="modal-content" style="margin-top:158px">\
+ <div class="modal-header">\
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>\
+<h4 class="modal-title">Selectionner</h4>\
+</div>\
+ <div class="modal-body">\
+<center><img src="images/loader.gif" class="loadingModal" /></center>\
+<iframe id="iframe_resultPizzaMenus" src="" style="zoom:0.60;display:none;" width="100%" height="1000" frameborder="0"></iframe>\
+</div>\
+</div>\
+</div>\
+</div>');$("body").append(customModal);
+
+                $("#ModalPizzaMenus").on("shown.bs.modal", function (e) {
+
+                    var frameSrc = url;
+
+                    $("#iframe_resultPizzaMenus").attr("src",frameSrc);
+
+                    $("#iframe_resultPizzaMenus").load(function() {
+
+                        $(".loadingModal").hide();
+
+                        $("#iframe_resultPizzaMenus").show();
+
+                    });
+
+                });
+
+                $("#ModalPizzaMenus").modal({show:true})
+
+
+
+                $("#ModalPizzaMenus").on("hidden.bs.modal", function (e) {
+
+                    $("#ModalPizzaMenus").remove();
+
+                });
+
+
+
+                window.closeModalDetailsMenus = function(){
+
+                    $("#ModalPizzaMenus").modal("hide");
+
+                };
+
+            }
+
+
+
+            function popupDetail(res,id){
+
+
+
+                if(typeof id === "undefined") var id="";
+
+                var customModal = $('<div id="myModalPoP'+id+'" class="modal fade">\
+<div class="modal-dialog" >\
+ <div class="modal-content" >\
+'+res+'\
+ </div>\
+</div>\
+ </div>\
+</div>');
+                $('body').append(customModal);
+                $('#myModalPoP'+id).modal({show:true})
+                $('#myModalPoP'+id).on('hidden.bs.modal', function (e) {
+
+                    $('#myModalPoP'+id).modal('hide');
+
+                    $('#myModalPoP'+id).remove();
+
+                });
+
+                closeModalPopup = function(){
+
+                    $('#myModalPoP'+id).modal('hide');
+
+                };
+
+            }
+
+		</script>
+
+	</head>
+
+
+<body>
+
+<!-- headermodel4 -->
+
+<div class="site-wrap">
+	<header>
+    <div class="row navbar-fixed-top blackBg topbar">
+      <div class="row whiteBg">
+        <div class="container">
+          <div class="col-lg-3 col-md-5 topIcons"> <a href="fb"><i class="fa fa-facebook"></i></a> <a href="gplus"><i class="fa fa-google-plus"></i></a> <a href="twit "><i class="fa fa-twitter"></i></a> <a href="youtube"><i class="fa fa-youtube"></i></a> <a href="instagram"><i class="fa fa-instagram"></i></a>  </div>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-3 col-md-3 col-sm-6 seconnector text-center"><span class="glyphicon glyphicon-user"></span> <a href="votre-compte.php" >Se connecter</a> | <a href="newaccount.html" onclick="window.location.href='newaccount.php'" style="cursor: hand">Cr&eacute;er un Compte</a> </div>
+          <div class="col-lg-2 col-md-2 col-sm-12 cartArea"><span class="glyphicon glyphicon-shopping-cart"></span> <span id="prix_total">Vide</span></div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-lg-2 col-md-3 col-sm-2">
+          <div class="logo"><a href="index"><img src="images/logo.png" alt="" class="center-block"></a></div>
+        </div>
+        <div class="col-lg-6 col-md-9 col-sm-10">
+          <nav class="navbar navbar-inverse naviBar">
+            <div class="container-fluid">
+              
+              <!-- Brand and toggle get grouped for better mobile display -->
+
+              <div class="navbar-header" style="margin:0 0 0 0;">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                  <li> <a href="javascript: void(0);" class="toggle-Click commander" data-id="body-nav">COMMANDER<span class="caret"></span></a> </li>
+                  <li> <a href="javascript: void(0);" class="toggle-Click" data-id="envie-nav">Vos Envies<span class="caret"></span></a> </li>
+                  <li><a href="a-emporter.php">Notre Restaurant</a></li>
+                  <li><a href="contact.php">Contact</a></li>
+                </ul>
+              </div>
+              <!-- type commande -->
+              <div class="col-lg-3 col-md-3 hdLinks bgActive"><a href="#"><img src="images/icon-livraison.png" width="15" height="15"> En Livraison</a></div>
+              <div class="col-lg-3 col-md-3 hdLinks"><a href="#"><img src="images/icon-emporter.png" width="15" height="15"> A Emporter</a></div>
+              <div class="col-lg-3 col-md-3 hdLinks"><a href="#"><img src="images/icon-surplace.png" width="15" height="15"> Sur Place</a></div>
+              <!-- end type commande -->
+              <!-- /.navbar-collapse -->
+            </div>
+
+            <!-- /.container-fluid -->
+          </nav>
+        </div>
+        <div class="col-lg-2 col-md-2  col-sm-2 col-xs-12">
+      <div class="comteBt">
+      <a href="votre-compte.php"><img src="images/mon-compte.png" alt=" "></a>
+      <a href="checkout.php"><img src="images/mon-panier.png" alt=" "></a>
+      </div>
+      
+      </div>
+      <div class="col-lg-2 telFull mrgZero"><p>02 3500 3500</p></div>
+      </div>
+    </div>
+  </header>
+	
+	
+	<div class="push-wrap">
+		<div class="clearfix"></div>
+		<div id="popup" class="alert alert-success" style="display: none;">Produit ajout&eacute;!</div>
+
+		<!-- end headermodel4 --><div class="row linkPageArea">
+     <div class="col-lg-2 col-md-2 col-sm-6 leftPrNav">
+       <p class="pull-left oswald"><a href="#">Entrée</a></p>
+      <div class="clearfix"></div>
+      <p class="pull-left oswald"><a href="#">Maki</a></p>
+	  <div class="clearfix"></div>
+      <p class="pull-left oswald"><a href="#">California</a></p>
+      <div class="clearfix"></div>
+      <p class="pull-left oswald"><a href="#">Rolls</a></p>
+      <div class="clearfix"></div>
+      <p class="pull-left oswald"><a href="#">Ice club</a></p>
+      <div class="clearfix"></div>
+      <p class="pull-left oswald"><a href="#">Avocat Maki</a></p>     
+      <div class="clearfix"></div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-6 mrgZero">
+      <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+     <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+         <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+		<div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+		<div class="col-lg-3 col-md-6 col-sm-6 prodBox">
+        <div class="linkView view-first"> <img src="images/item2.png" class="img-responsive center-block" />
+          <div class="linkMask">
+            <h2>Marguerita</h2>
+            <div class="clearfix"></div>
+            <h3 class="pull-left">10.00€</h3>
+            <a href="#" class="info pull-left">Ajouter</a>
+            <div class="clearfix"></div>
+            <div class="prodSocial"><a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-instagram"></i></a> <a href="#"><i class="fa fa-google-plus"></i></a> <a href="#"><i class="fa fa-youtube"></i></a> </div>
+          </div>
+          <span class="descPrix">
+          <h1>Marguerita</h1>          
+          <h1>10.00€</h1>
+          <div class="clearfix"></div>
+          </span> </div>
+      </div>
+    </div>
+    
+      <div class="col-lg-3 col-md-3 col-sm-3" id="width-control"><div class="panierArea">
+      <p class="panierTitle"><i class="fa fa-briefcase"></i>&nbsp;&nbsp;Ma Commande</p>
+<!-- type commande -->
+            <div>
+              <div class="col-lg-4 col-md-4 hdLinks bgActive"><a href="#">En Livraison</a></div>
+              <div class="col-lg-4 col-md-4 hdLinks"><a href="#">A Emporter</a></div>
+              <div class="col-lg-4 col-md-4 hdLinks"><a href="#">Sur Place</a></div>
+            </div>
+<!-- end type commande -->
+      <strong>PIZZA</strong> : Pizza Presto<strong class="pull-right">26.00 €</strong><br>
+      <strong>Super Méga</strong><br>
+      <div class="clearfix"></div>
+      <div id="panierProd"><img src="images/panier-product.png" alt=" " width="50" height="80"></div>
+      SANS : Oeuf , Bleu<br>
+      Ingrédients Supp.chorizo,crème fraiche,emmental
+      <hr>
+      <div id="panierProd"><img src="images/panier-product.png" alt=" " width="50" height="80"></div>
+      SANS : Oeuf , Bleu<br>
+      Ingrédients Supp.chorizo,crème fraiche,emmental
+      <hr>
+      <div class="panierQuantiyFull pull-left">
+        <div class="panierMinus"><a href="#"><span class="glyphicon glyphicon-minus"></span></a></div>
+        <input type="text" class="pull-left" placeholder="1">
+        <div class="panierPlus"><a href="#"><span class="glyphicon glyphicon-plus"></span></a></div>
+      </div>
+      35.00€
+      <div class="panierPlus whiteColor pull-right"><a href="#"><span class="glyphicon glyphicon-remove"></span></a></div>
+      <div class="clearfix"></div>
+      <strong>TEX MEX :</strong>Grande Potatoes
+      <hr>
+      <div class="totalBar">
+        <p class="pull-left pdLeft10 osward">Total</p>
+        <p class="pull-right pdRight10 osward">€90</p>
+      </div>
+      <div class="clearfix"></div>
+      <div class="panierAreabt"><a href="#">JA VALIDER MA COMMANDE</a></div>
+      <DIV class="clear"></DIV>
+      <img src="images/movie.jpg" width="600" height="338" class="img-responsive"> </div></div>  
+  </div>
+		<style>
+			div.tooltip-inner {
+				text-align: center;
+				font-size: 20px;
+			}
+		</style>
+		<a href="#0" class="cd-top ">
+			<div class="scrollTop"></div>
+		</a>
+		<!--<div class="phoneIcon scrollTelBg scrollTel" data-toggle="tooltip" data-placement="right" title="01.30.75.20.20" ><a href="javascript: void(0);" ><i class="fa fa-phone"></i></a></div>-->
+
+	</div>
+</div>
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(["_setAccount", "UA-22310388-41"]);
+    _gaq.push(["_trackPageview"]);
+
+    (function() {
+        var ga = document.createElement("script"); ga.type = "text/javascript"; ga.async = true;
+        ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="js/tooltip.js"></script>
+<script src="topArrow/main.js"></script>
+
+
+<script src="js-animation/jquery.superslides.min.js"></script>
+<script src="js-animation/wow.min.js"></script>
+<script src="js-animation/functions.js"></script>
+
+
+<!-- Main Slider -->
+
+<script type="text/javascript" src="slider-js/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="slider-js/jquery.slitslider.js"></script>
+<script src="js/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+<script src="js/script-cmd.js" type="text/javascript"></script>
+<script src="image-picker/image-picker.js" type="text/javascript"></script>
+<script>
+    // $( document ).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    // });
+
+</script>
+
+<script type="text/javascript">
+    $('.toggle-Click').click(function(){
+        var dataID=$(this).data("id");
+        var okk=1;
+        $( ".nav-class" ).each(function( index ) {
+            if(!$( this ).hasClass( "hide" )&&dataID!=$(this).attr("id")){
+                $('#'+$(this).attr("id")).toggleClass('hide');
+                okk=0;
+            }
+        });
+        if(okk){
+            $('body').toggleClass('show-nav');
+            $('.cd-top').toggleClass('hide');
+        }
+        $('#'+dataID).toggleClass('hide');
+        return false;
+    });
+
+    //$(document).keyup(function(e){if(e.keyCode==27){$('body').toggleClass('show-nav');}});
+    // clickPizza
+    $( ".clickPizza" ).click(function() {
+        var url=$(this).attr("data-url");
+        var width="800px";
+        var height="500";
+        var title="Selectionner";
+        if (typeof $(this).attr("data-height") != "undefined") {
+            height=$(this).attr("data-height");
+        }
+        if (typeof $(this).attr("data-title") != "undefined") {
+            title=$(this).attr("data-title");
+        }
+        if (typeof $(this).attr("data-width") != "undefined") {
+            width=$(this).attr("data-width");
+        }
+
+        if (typeof $(this).attr("data-produit") != "undefined") {
+            var taille=$(this).attr("data-taille");
+            var id_produit=$(this).attr("data-produit");
+            var resTaille=0;
+            if(taille>0) resTaille=$("input[name=taille"+id_produit+"]:checked", "#formulaire_"+id_produit).val();
+            url+="&id_taille="+resTaille;
+        }
+        var customModal = $('<div id="ModalPizza" class="modal fade">\
+  <div class="modal-dialog"  style="width:  '+width+'  ;margin-top: 160px;">\
+    <div class="modal-content" style="margin-top:156px;">\
+      <div class="modal-header">\
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color:#fff;"><span aria-hidden="true">&times;</span></button>\
+		<h4 class="modal-title">'+title+'</h4>\
+      </div>\
+      <div class="modal-body" >\
+	  <center><img src="images/loader.gif" class="loadingModal" /></center>\
+			<iframe id="iframe_resultPizza" src="" style="display:none;" width="100%" height="'+height+'" frameborder="0"></iframe>\
+      </div>\
+    </div>\
+  </div>\
+</div>');
+
+        $("body").append(customModal);
+        $("#ModalPizza").on("shown.bs.modal", function (e) {
+            var frameSrc = url;
+            $("#iframe_resultPizza").hide();
+            $("#iframe_resultPizza").attr("src",frameSrc);
+            $("#iframe_resultPizza").load(function() {
+                $(".loadingModal").hide();
+                $("#iframe_resultPizza").show();
+            });
+        });
+        $("#ModalPizza").modal({show:true})
+
+        $("#ModalPizza").on("hidden.bs.modal", function (e) {
+            $("#ModalPizza").remove();
+        });
+
+        window.closeModalDetails = function(){
+            $("#ModalPizza").modal("hide");
+        };
+    });
+
+</script>
+</body>

@@ -1,0 +1,13 @@
+﻿sts_bs("jwscroller2dbd",[20080623,"images/","","blank.gif",6,1,0,50,"1000px","left",10,5,150,75,0,100,0,0,0,2000,1,40,1,"stEffect(\"scroll(Rate=24,enabled=0,Duration=0.60)\")",-2,50],["none",1,"#454545","","","repeat"]);
+sts_sca(["center","middle","center","middle"],["arrow-left.png","arrow-left.png","arrow-left.png",43,45,"right-arrow.png","right-arrow.png","right-arrow.png",43,45]);
+sts_ai("i0",[0,"MENUS MIDI","#","_self","navi-images/2.png",92,75,"center"],["transparent","10pt Arial","","none","10pt Arial","","none"]);
+sts_ai("i1",[,"PIZZA TOMATE",,,"navi-images/3.png"],[],"i0","i0");
+sts_ai("i2",[,"NOS PIZZAS",,,"navi-images/4.png"],[],"i0","i0");
+sts_ai("i3",[,"PâTES",,,"navi-images/5.png"],[],"i0","i0");
+sts_ai("i4",[,"ESCALOPE",,,"navi-images/6.png"],[],"i0","i0");
+sts_ai("i5",[,"SALADES",,,"navi-images/7.png"],[],"i0","i0");
+sts_ai("i6",[,"DESSERT",,,"navi-images/9.png"],[],"i0","i0");
+sts_ai("i7",[,"BOISSONS",,,"navi-images/10.png"],[],"i0","i0");
+sts_ai("i8",[,"BURGERS",,,"navi-images/11.png"],[],"i0","i0");
+sts_ai("i9",[,,,,"navi-images/12.png"],[],"i0","i0");
+sts_es();
